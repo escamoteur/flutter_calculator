@@ -51,8 +51,7 @@ class MyAppState extends State<MyApp> {
                   }).toList();
   }
 
-  Widget buildOperatorButton(String label, OperatorFunc func, int flex, {Color color = Colors.amber})
-  {
+  Widget buildOperatorButton(String label, OperatorFunc func, int flex, {Color color = Colors.amber}){
       return Expanded(flex: flex,
               child: Padding(
                   padding: const EdgeInsets.all(1.0),
@@ -62,8 +61,7 @@ class MyAppState extends State<MyApp> {
       );
   }
 
-  Widget buildRow(int numberKeyCount, int startNumber,  int numberFlex, String operationLabel, OperatorFunc operation, int operrationFlex)
-  {
+  Widget buildRow(int numberKeyCount, int startNumber,  int numberFlex, String operationLabel, OperatorFunc operation, int operrationFlex){
       return new Expanded(child: 
                 Row(crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: new List.from(buildNumberButtons(numberKeyCount,startNumber ,numberFlex,))
