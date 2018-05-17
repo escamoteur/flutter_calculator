@@ -1,6 +1,8 @@
 # flutter_calculator
 
-A new Flutter project.
+
+![](https://github.com/escamoteur/flutter_calculator/blob/master/screenshots/screenshot.PNG)
+
 
 ## Getting Started
 
