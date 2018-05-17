@@ -3,8 +3,4 @@
 
 ![](https://github.com/escamoteur/flutter_calculator/blob/master/screenshots/screenshot.PNG)
 
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+Very simple calculator App done in 90 lines of code, inspired by [Elmish.Calculator](https://github.com/nosami/Elmish.Calculator) done in Xamarin Forms.
