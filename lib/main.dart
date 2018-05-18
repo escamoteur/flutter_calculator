@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(new MyApp());
@@ -13,10 +12,8 @@ typedef OperatorFunc = double Function(double accu, double operand);
 
 class MyAppState extends State<MyApp> {
 
-  double accu = 0.0;
-  double operand = 0.0;
+  double accu = 0.0, operand = 0.0;
   OperatorFunc queuedOperation;
-
   String resultString = "0.0";
 
   void numberPressed(int value)  {
@@ -25,14 +22,10 @@ class MyAppState extends State<MyApp> {
   }
 
   void calc(OperatorFunc operation) {
-      if (operation == null) // C was pressed
-      {
+      if (operation == null)  // C was pressed
         accu = 0.0;
-      }
       else
-      {
         accu = queuedOperation != null ? queuedOperation(accu, operand) : operand;
-      }
       queuedOperation = operation;
       operand = 0.0;
       var result = accu.toString();
@@ -87,5 +80,3 @@ class MyAppState extends State<MyApp> {
     );
   }
 }
-
-
