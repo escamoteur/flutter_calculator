@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-
 void main() => runApp(new MyApp());
 
 class MyApp extends StatefulWidget {
@@ -11,7 +10,6 @@ class MyApp extends StatefulWidget {
 typedef OperatorFunc = double Function(double accu, double operand);
 
 class MyAppState extends State<MyApp> {
-
   double accu = 0.0, operand = 0.0;
   OperatorFunc queuedOperation;
   String resultString = "0.0";
